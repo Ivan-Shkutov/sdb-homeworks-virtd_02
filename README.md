@@ -50,18 +50,18 @@ See 'snap info docker' for additional versions.
 ### Решение:
 
 ```
+#Dockerfile.python
+
 FROM python:3.9-slim
-
 WORKDIR /app
-
 COPY requirements.txt ./
-
 RUN pip install -r requirements.txt
-
 COPY main.py ./
-
 CMD ["python", "main.py"]
 ```
+
+[1!]()
+
 ### Задача 3
 
 1. Изучите файл "proxy.yaml"
