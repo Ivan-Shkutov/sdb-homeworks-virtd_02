@@ -24,8 +24,9 @@ See 'snap info docker' for additional versions.
 
 ### Решение:
 
-![1]()
+![1](https://github.com/Ivan-Shkutov/sdb-homeworks-virtd_02/blob/main/img/1.png)
 
+![2](https://github.com/Ivan-Shkutov/sdb-homeworks-virtd_02/blob/main/img/2.png)
 
 ### Задача 1
 
