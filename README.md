@@ -133,7 +133,8 @@ services:
       backend:
         ipv4_address: 172.20.0.5
 ```
-    
+
+![8](https://github.com/Ivan-Shkutov/sdb-homeworks-virtd_02/blob/main/img/8.png)    
 
 ![6](https://github.com/Ivan-Shkutov/sdb-homeworks-virtd_02/blob/main/img/6.png)
 
