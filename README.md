@@ -85,8 +85,55 @@ db. image=mysql:8. Контейнер должен работать в bridge-с
 6. Остановите проект. В качестве ответа приложите скриншот sql-запроса.
 
 ### Решение:
+```
+#compose.yaml
 
 
+include:
+  - proxy.yaml
+
+volumes:
+  db_mysql:
+
+services:
+
+  db:
+    image: mysql:8
+    restart: on-failure
+    env_file:
+      - .env
+    volumes:
+      - db_mysql:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - 3306:3306
+    networks:
+      backend:
+        ipv4_address: 172.20.0.10
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      retries: 5
+
+  web:
+    build:
+          dockerfile: Dockerfile.python
+    restart: on-failure
+    environment:
+      DB_HOST: db
+      DB_TABLE: requests
+      DB_PORT: 3306
+      DB_NAME: ${MYSQL_DATABASE}
+      DB_USER: ${MYSQL_USER}
+      DB_PASSWORD: ${MYSQL_PASSWORD}
+    depends_on:
+        db:
+          condition: service_healthy
+    networks:
+      backend:
+        ipv4_address: 172.20.0.5
+```
+    
 
 
 
