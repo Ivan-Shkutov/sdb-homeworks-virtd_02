@@ -61,7 +61,10 @@ COPY main.py ./
 CMD ["python", "main.py"]
 ```
 
-![1]()
+![4](https://github.com/Ivan-Shkutov/sdb-homeworks-virtd_02/blob/main/img/4.png)
+
+![5](https://github.com/Ivan-Shkutov/sdb-homeworks-virtd_02/blob/main/img/5.png)
+
 
 ### Задача 3
 
