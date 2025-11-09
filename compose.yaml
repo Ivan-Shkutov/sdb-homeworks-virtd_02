@@ -1,33 +1,44 @@
-version: "3.8"
-
 include:
-  - ./proxy.yaml
+  - proxy.yaml
+
+volumes:
+  db_mysql:
 
 services:
 
+  db:
+    image: mysql:8
+    restart: on-failure
+    env_file:
+      - .env
+    volumes:
+      - db_mysql:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - 3306:3306
+    networks:
+      backend:
+        ipv4_address: 172.20.0.10
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      retries: 5
+
   web:
     build:
-      context: .
-      dockerfile: Dockerfile.python
+          dockerfile: Dockerfile.python
+    restart: on-failure
     environment:
-      - DB_HOST=db
-      - DB_USER=${MYSQL_USER}
-      - DB_PASSWORD=${MYSQL_PASSWORD}
-      - DB_NAME=${MYSQL_DATABASE}
-    restart: always
+      DB_HOST: db
+      DB_TABLE: requests
+      DB_PORT: 3306
+      DB_NAME: ${MYSQL_DATABASE}
+      DB_USER: ${MYSQL_USER}
+      DB_PASSWORD: ${MYSQL_PASSWORD}
     depends_on:
-      - db
+        db:
+          condition: service_healthy
     networks:
       backend:
         ipv4_address: 172.20.0.5
     
-  db:
-    image: mysql:8
-    env_file:
-      - .env
-    # restart: on-failure
-    networks:
-      backend:
-        ipv4_address: 172.20.0.10
-  
-       
