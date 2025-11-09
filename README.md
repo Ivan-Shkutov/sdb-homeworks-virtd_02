@@ -6,9 +6,13 @@
 
 Command 'docker-compose' not found, but can be installed with:
 
+```
+
 sudo snap install docker          # version 24.0.5, or
 
 sudo apt  install docker-compose  # version 1.25.0-1
+
+```
 
 See 'snap info docker' for additional versions.
 
