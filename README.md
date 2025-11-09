@@ -24,7 +24,7 @@ See 'snap info docker' for additional versions.
 
 ### Решение:
 
-
+![1]()
 
 
 ### Задача 1
@@ -60,7 +60,7 @@ COPY main.py ./
 CMD ["python", "main.py"]
 ```
 
-[1!]()
+![1]()
 
 ### Задача 3
 
