@@ -135,6 +135,9 @@ services:
 ```
     
 
+![6](https://github.com/Ivan-Shkutov/sdb-homeworks-virtd_02/blob/main/img/6.png)
+
+![7](https://github.com/Ivan-Shkutov/sdb-homeworks-virtd_02/blob/main/img/7.png)
 
 
 
