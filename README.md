@@ -150,7 +150,7 @@ services:
 
 ### Решение:
 
-
+![4.1](https://github.com/Ivan-Shkutov/sdb-homeworks-virtd_02/blob/main/img/4.1.png)
 
 
 
