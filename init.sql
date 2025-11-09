@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS example;
+
+USE example;
+
+CREATE TABLE IF NOT EXISTS requests (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    request_date DATETIME NOT NULL,
+    request_ip VARCHAR(50) NOT NULL
+);
