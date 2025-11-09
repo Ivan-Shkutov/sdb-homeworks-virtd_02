@@ -168,7 +168,11 @@ services:
 
 ### Решение:
 
+![6.1](https://github.com/Ivan-Shkutov/sdb-homeworks-virtd_02/blob/main/img/6.1.png)
 
+![6.2](https://github.com/Ivan-Shkutov/sdb-homeworks-virtd_02/blob/main/img/6.2.png)
+
+![6.3](https://github.com/Ivan-Shkutov/sdb-homeworks-virtd_02/blob/main/img/6.3.png)
 
 
 
