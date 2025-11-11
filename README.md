@@ -165,6 +165,14 @@ services:
 ![13](https://github.com/Ivan-Shkutov/sdb-homeworks-virtd_02/blob/main/img/13.png)
 
 
+https://github.com/dR4KoN87/shvirtd-example-python
+
+```
+
+#compose.yaml
+
+
+```
 
 
 ### Задача 6
