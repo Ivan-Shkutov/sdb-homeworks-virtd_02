@@ -35,9 +35,9 @@ docker run -d \
   --ip 172.20.0.5 \
   -p 127.0.0.1:5000:5000 \
   -e DB_HOST=172.20.0.10 \
-  -e DB_USER=app \
-  -e DB_PASSWORD=QwErTy1234 \
-  -e DB_NAME=virtd \
+  -e DB_USER=${MYSQL_USER} \
+  -e DB_PASSWORD=${MYSQL_PASSWORD} \
+  -e DB_NAME=${MYSQL_DATABASE} \
   -e TABLE_NAME=requests \
   my-fastapi
 
