@@ -14,10 +14,10 @@ docker run -d \
   --name mysql-dev \
   --network backend \
   --ip 172.20.0.10 \
-  -e MYSQL_ROOT_PASSWORD=YtReWq4321 \
-  -e MYSQL_DATABASE=virtd \
-  -e MYSQL_USER=app \
-  -e MYSQL_PASSWORD=QwErTy1234 \
+  -e MYSQL_ROOT_PASSWORD=rootpass \
+  -e MYSQL_DATABASE=example \
+  -e MYSQL_USER=test_user \
+  -e MYSQL_PASSWORD=est_password \
   mysql:8.0
 
 # Ждём, пока MySQL запустится
