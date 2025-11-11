@@ -156,6 +156,13 @@ services:
 
 ![14](https://github.com/Ivan-Shkutov/sdb-homeworks-virtd_02/blob/main/img/14.png)
 
+![9](https://github.com/Ivan-Shkutov/sdb-homeworks-virtd_02/blob/main/img/9.png)
+
+![11](https://github.com/Ivan-Shkutov/sdb-homeworks-virtd_02/blob/main/img/11.png)
+
+![12](https://github.com/Ivan-Shkutov/sdb-homeworks-virtd_02/blob/main/img/12.png)
+
+![13](https://github.com/Ivan-Shkutov/sdb-homeworks-virtd_02/blob/main/img/13.png)
 
 
 
